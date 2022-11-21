@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlagActivity">
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:gravity="center"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageCA"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@drawable/flag_00"
+                android:padding="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageEG"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@drawable/flag_01"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/imageFR"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/flag_02"
+                android:padding="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/imageSP"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@drawable/flag_05"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/imageKR"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/flag_04"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/imageJP"
+                android:layout_width="125dp"
+                android:layout_height="128dp"
+                app:srcCompat="@drawable/flag_03"
+                android:padding="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageUS"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@drawable/flag_08"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/imageUK"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@drawable/flag_07"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/imageTR"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:srcCompat="@drawable/flag_06"
+                android:padding="10dp"/>
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
