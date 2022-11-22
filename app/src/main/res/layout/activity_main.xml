@@ -26,7 +26,7 @@
         android:layout_marginStart="177dp"
         android:layout_marginTop="88dp"
         android:layout_marginEnd="176dp"
-        android:text="Create Team"
+        android:text="Sports Team Manager"
         android:textColor="@color/black"
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
         android:layout_marginStart="159dp"
         android:layout_marginEnd="158dp"
         android:layout_marginBottom="49dp"
-        android:text="Create Team"
+        android:text="Open in google maps"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.644"
@@ -81,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="87dp"
-        android:hint="Team country"
+        android:hint="Team Name"
         app:layout_constraintTop_toBottomOf="@+id/btnEdit"
         tools:layout_editor_absoluteX="-1dp" />
 
@@ -90,7 +90,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:hint="Team name"
+        android:hint="Team Address"
         app:layout_constraintTop_toBottomOf="@+id/textCountry"
         tools:layout_editor_absoluteX="16dp" />
 

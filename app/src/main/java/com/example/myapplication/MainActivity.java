@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -64,9 +65,18 @@ public class MainActivity extends AppCompatActivity {
                 }else if (Name.equals("")){
                     textName.setError("Enter a team name");
                 }else{
+                    OnOpenInGoogletaps(view);
                     Toast.makeText(MainActivity.this, "Team "+ Name +" from "+ County+" has been created!", Toast.LENGTH_LONG).show();
                 }
             }
         });
+    }
+    public void OnOpenInGoogletaps(View view) {
+        String Name = textName.getText().toString();
+        Uri gnmIntentUri = Uri.parse("http://maps.google.co.in/maps?q=" + Name);
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gnmIntentUri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+
+        startActivity(mapIntent);
     }
 }
